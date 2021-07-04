@@ -46,12 +46,12 @@ gpio35  -  RESET
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
 
-~~ LED ~~ 
+~~ LED ~~   
 gpio21  -  RED LED Inverted     	Relay1  
 gpio22  -  BLUE LED Inverted 	    Relay2  
 gpio4   -  GREEN LED Inverted	    Relay3  
 
-~~ PIEZO ~~ 
+~~ PIEZO ~~   
 gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
 
 ~~ ?i2c? GAS SENSOR ~~  
