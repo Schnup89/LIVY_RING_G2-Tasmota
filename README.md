@@ -1,21 +1,43 @@
 # Vorwort
 Sobald ihr den ESP flashed, gibt es kein zurück auf den Ursprungszustand, außer Ihr sichert euch evtl. den Flash (habe ich weder gemacht noch getestet).
 Ich übernehme keine Haftung für irgendwas ;)
+Bitte entfernt für das Testen die drei LiPo Batterien!
 
-## Was funktioniert aktuell?
+
+PIN-Layout ESP32-WROOM-32X
+https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
+
+
+# Was funktioniert aktuell?
 - LED Steurung (Rot,Grün,Blau) [Sichtbar am PIR Sensor] 
 - Der Reset-Knopf wird beim drücken erkannt
 - i2c Verbindung, aber für die Chips gibt es ~noch~ keine Tasmota Module
 
 
-# Öffnen
+## Den Ring öffnen
 - Plastikschutzfolio an der Unterseite des "RING" entfernen
 - Vier Kreuzschlitzschrauben entfernen (am besten die Löcher mit einem Schranubenzieher ertasten)
+- Ring entfernen
 
-# PINs für das Flashen
 
+## Flashen
+!!!! Batterien entfernen !!!!
 
-# gpios and sensor
+Ihr braucht:
+- Einen USB TTL Adapter oder ein anderes Gerät mit TTL USB RX TX Schnittstelle
+- Tasmota Binary ***Link kommt noch***
+- Flasher ***Link kommt noch***
+
+~~ Flash-Modus aktivieren ~~
+- gpio0 mit GND verbinden
+- ESP32 starten (USB Kabel verbinden)
+- Led bleibt dauerhaft "grün"
+- gpio0 Verbindung zu GND trennen
+- gpio1 mit dem TTL-Modul RX verbinden
+- gpio3 mit dem TTL-Modul TX verbinden
+- ***tbd flashen erklären***
+
+## gpios and sensor
 
 ~~ Buttons ~~
 gpio35  -  RESET
