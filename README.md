@@ -39,30 +39,30 @@ Ihr braucht:
 
 ## gpios and sensor
 
-~~ Buttons ~~
-gpio35  -  RESET
+~~ Buttons ~~  
+gpio35  -  RESET  
  
-~~ Motion (PIR) ~~ 
-gpio32  -  serial IN       OUTPUT
-gpio2   -  DirectLink      INPUT
+~~ Motion (PIR) ~~   
+gpio32  -  serial IN       OUTPUT  
+gpio2   -  DirectLink      INPUT  
 
 ~~ LED ~~ 
-gpio21  -  RED LED Inverted     	Relay1
-gpio22  -  BLUE LED Inverted 	    Relay2
-gpio4   -  GREEN LED Inverted	    Relay3
+gpio21  -  RED LED Inverted     	Relay1  
+gpio22  -  BLUE LED Inverted 	    Relay2  
+gpio4   -  GREEN LED Inverted	    Relay3  
 
 ~~ PIEZO ~~ 
-gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high
+gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
 
-~~ ?i2c? GAS SENSOR ~~
-gpio18  -  HeaterPIN CSS811 oder CSS801 
+~~ ?i2c? GAS SENSOR ~~  
+gpio18  -  HeaterPIN CSS811 oder CSS801   
 
-~~ i2c LiPO Spannungsanzeige [LC709203F] ~~
-gpio32  -  low power alarm
+~~ i2c LiPO Spannungsanzeige [LC709203F] ~~  
+gpio32  -  low power alarm  
 
-~~ i2C ~~
-gpio14 - SDA 
-gpio12 - SCL
-Found Devices:
-{"I2CScan":"Device(s) found at 0x0b 0x6f"}
-0x5f = LC709203F
+~~ i2C ~~  
+gpio14 - SDA   
+gpio12 - SCL  
+Found Devices:  
+{"I2CScan":"Device(s) found at 0x0b 0x6f"}  
+0x5f = LC709203F  
