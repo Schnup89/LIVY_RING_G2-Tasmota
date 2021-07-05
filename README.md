@@ -66,7 +66,7 @@ gpio4   -  GREEN LED Inverted	    Relay3
 ~~ PIEZO ~~   
 gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
 
-~~ ?i2c? GAS SENSOR ~~  
+~~ GAS SENSOR CCS801 ~~  
 gpio18  -  HeaterPIN CSS811 oder CSS801   
 
 ~~ i2c LiPO Spannungsanzeige [LC709203F] ~~  
