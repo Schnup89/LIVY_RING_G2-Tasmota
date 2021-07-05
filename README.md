@@ -31,7 +31,7 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - oder Flasher Windows (Müsst ihr probieren, hier die originale Anleitung: https://tasmota.github.io/docs/ESP32/#flashing)
 
 ~~ Vorbereitung ~~  
-LivyTasmota.bin und alle vier flash Files in den selben Ordner wie das Flash-Tool ablegen.
+livyringg2tasmo.bin und alle vier flash Files in den selben Ordner wie das Flash-Tool ablegen.
 Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
 ~~ Flash-Modus aktivieren ~~
