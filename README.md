@@ -23,10 +23,16 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 ## Flashen
 !!!! Batterien entfernen !!!!
 
-Ihr braucht:
+~~ Was ihr braucht ~~
 - Einen USB TTL Adapter oder ein anderes Gerät mit TTL USB RX TX Schnittstelle
-- Tasmota Binary ***Link kommt noch***
-- Flasher ***Link kommt noch***
+- Tasmota Binary livyringg2tasmo.bin aus diesem Repository
+- Tasmota "Flash-Files" https://github.com/arendst/Tasmota/tree/firmware/firmware/tasmota32/ESP32_needed_files
+- Flasher Linux https://github.com/espressif/esptool 
+- oder Flasher Windows (Müsst ihr probieren, hier die originale Anleitung: https://tasmota.github.io/docs/ESP32/#flashing)
+
+~~ Vorbereitung ~~  
+LivyTasmota.bin und alle vier flash Files in den selben Ordner wie das Flash-Tool ablegen.
+Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
 ~~ Flash-Modus aktivieren ~~
 - gpio0 mit GND verbinden
@@ -35,7 +41,12 @@ Ihr braucht:
 - gpio0 Verbindung zu GND trennen
 - gpio1 mit dem TTL-Modul RX verbinden
 - gpio3 mit dem TTL-Modul TX verbinden
-- ***tbd flashen erklären***
+- Kommando ausführen: 
+```
+esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dout --flash_freq 40m --flash_size detect 0x1000 bootloader_dout_40m.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 livyringg2tasmo.bin
+```
+- Wenn der Flasher erfolg vermeldet hat, den ESP neu starten und es sollte ein Tasmota WLAN für die weitere Einrichtung erscheinen.
+
 
 ## gpios and sensor
 
