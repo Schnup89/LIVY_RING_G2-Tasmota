@@ -11,7 +11,7 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 # Was funktioniert aktuell?
 - LED Steurung (Rot,Grün,Blau) [Sichtbar am PIR Sensor] 
 - Der Reset-Knopf wird beim drücken erkannt
-- i2c Verbindung, aber für die Chips gibt es ~noch~ keine Tasmota Module
+- i2c Verbindung, aber für die Chips gibt es ~ noch ~ keine Tasmota Module
 
 
 ## Den Ring öffnen
