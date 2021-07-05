@@ -3,6 +3,7 @@ Sobald ihr den ESP flashed, gibt es kein zurück auf den Ursprungszustand, auße
 Ich übernehme keine Haftung für irgendwas ;)
 Bitte entfernt für das Testen die drei LiPo Batterien!
 
+!! Es gibt keine Garantie dass alle Sensoren in Tasmota implementiert werden können !! 
 
 PIN-Layout ESP32-WROOM-32X
 https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
