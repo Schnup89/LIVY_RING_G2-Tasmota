@@ -57,7 +57,7 @@ gpio35  -  RESET
 ~~ :heavy_division_sign: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio13  -  Power? 3,3v ON/OFF mit Transmitter?
+gpio??  -  Power? 3,3v ON/OFF mit Transmitter?
 
 ~~ :heavy_check_mark: LED ~~   
 gpio21  -  RED LED Inverted     	Relay1  
@@ -69,6 +69,9 @@ gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 gpio18  -  HeaterPIN CSS811 oder CSS801   
+
+~~ :heavy_division_sign: Chip: 1099 a40AG ~~   
+gpio13  -  Funktion unbekannt
 
 ~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
 gpio32  -  low power alarm  
