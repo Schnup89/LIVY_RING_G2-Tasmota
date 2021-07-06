@@ -54,7 +54,7 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 ~~ :heavy_check_mark: Buttons ~~  
 gpio35  -  RESET  
  
-~~ :white_check_mark: Motion (PIR) ~~   
+~~ :heavy_division_sign: Motion (PIR) ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
 
@@ -63,13 +63,13 @@ gpio21  -  RED LED Inverted     	Relay1
 gpio22  -  BLUE LED Inverted 	    Relay2  
 gpio4   -  GREEN LED Inverted	    Relay3  
 
-~~ :white_check_mark: PIEZO ~~   
+~~ :heavy_division_sign: PIEZO ~~   
 gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
 
-~~ :white_check_mark: GAS SENSOR CCS801 ~~  
+~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 gpio18  -  HeaterPIN CSS811 oder CSS801   
 
-~~ i2c LiPO Spannungsanzeige [LC709203F] ~~  
+~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
 gpio32  -  low power alarm  
 
 ~~ :heavy_check_mark: i2c RTC Clock (MCP7940M) 
