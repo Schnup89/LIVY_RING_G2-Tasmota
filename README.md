@@ -72,12 +72,13 @@ gpio18  -  HeaterPIN CSS811 oder CSS801
 ~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
 gpio32  -  low power alarm  
 
-~~ :heavy_check_mark: i2c RTC Clock (MCP7940M) 
+~~ :heavy_check_mark: i2c RTC Clock (MCP7940M)  
 i2c-pins
 
 ~~ :heavy_check_mark: i2C ~~  
 gpio14 - SDA   
 gpio12 - SCL  
+  
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x0b 0x6f"}  
 0x0b = LC709203F (LiPo-SPannungsanzeige)  
