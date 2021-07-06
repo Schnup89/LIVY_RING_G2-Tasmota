@@ -54,7 +54,7 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 ~~ :heavy_check_mark: Buttons ~~  
 gpio35  -  RESET  
  
-~~ :heavy_division_sign: Motion (PIR) ~~   
+~~ :heavy_division_sign: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
 
