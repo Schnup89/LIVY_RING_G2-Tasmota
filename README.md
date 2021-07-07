@@ -58,6 +58,7 @@ gpio35  -  RESET
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
 gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**
+Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
 ~~ :heavy_check_mark: LED ~~   
 gpio21  -  RED LED Inverted     	**[RELAY 1]**  
@@ -78,7 +79,8 @@ Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf
 Chip: ???? 1099 a40AG  
 
 ~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
-gpio32?  -  low power alarm  
+gpio32? -  low power alarm  
+Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
 ~~ :heavy_check_mark: i2c RTC Clock (MCP7940M)  
 i2c-pins
