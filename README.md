@@ -64,8 +64,8 @@ gpio21  -  RED LED Inverted     	Relay1
 gpio22  -  BLUE LED Inverted 	    Relay2  
 gpio4   -  GREEN LED Inverted	    Relay3  
 
-~~ :heavy_division_sign: PIEZO ~~   
-gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
+~~ :heavy_check_mark: PIEZO ~~   
+gpio16  -  Funktioniert als PWM Output
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 gpio18  -  Heater PIN   
