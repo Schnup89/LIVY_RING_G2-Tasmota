@@ -35,10 +35,10 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 livyringg2tasmo.bin und alle vier flash Files in den selben Ordner wie das Flash-Tool ablegen.
 Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
-~~ Flash-Modus aktivieren ~~
+~~ Flashen ~~
 - gpio0 mit GND verbinden
 - ESP32 starten (USB Kabel verbinden)
-- Led bleibt dauerhaft "grün"
+- Led bleibt dauerhaft "grün" <- Flashmodus aktiv
 - gpio0 Verbindung zu GND trennen
 - gpio1 mit dem TTL-Modul RX verbinden
 - gpio3 mit dem TTL-Modul TX verbinden
