@@ -57,12 +57,12 @@ gpio35  -  RESET
 ~~ :heavy_check_mark: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio27  -  Power 3,3v Sensor ON/OFF   [RELAY 4]
+gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**
 
 ~~ :heavy_check_mark: LED ~~   
-gpio21  -  RED LED Inverted     	[RELAY 1] 
-gpio22  -  BLUE LED Inverted 	   [RELAY 2]  
-gpio4   -  GREEN LED Inverted	   [RELAY 3]   
+gpio21  -  RED LED Inverted     	**[RELAY 1]** 
+gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**  
+gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
 
 ~~ :heavy_check_mark: PIEZO ~~   
 gpio16  -  Funktioniert als PWM Output
