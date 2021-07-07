@@ -57,7 +57,7 @@ gpio35  -  RESET
 ~~ :heavy_division_sign: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio??  -  Power? 3,3v ON/OFF mit Transmitter?
+gpio27  -  Power 3,3v Sensor ON/OFF
 
 ~~ :heavy_check_mark: LED ~~   
 gpio21  -  RED LED Inverted     	Relay1  
