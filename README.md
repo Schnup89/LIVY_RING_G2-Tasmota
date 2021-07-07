@@ -60,7 +60,7 @@ gpio2   -  DirectLink      INPUT
 gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**
 
 ~~ :heavy_check_mark: LED ~~   
-gpio21  -  RED LED Inverted     	**[RELAY 1]** 
+gpio21  -  RED LED Inverted     	**[RELAY 1]**  
 gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**  
 gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
 
