@@ -68,7 +68,8 @@ gpio4   -  GREEN LED Inverted	    Relay3
 gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high  
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
-gpio18  -  HeaterPIN CSS811 oder CSS801   
+gpio18  -  Heater PIN   
+gpio33  -  Sensor PIN  
 
 ~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
 gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
