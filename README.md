@@ -54,15 +54,15 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 ~~ :heavy_check_mark: Buttons ~~  
 gpio35  -  RESET  
  
-~~ :heavy_division_sign: Motion (PIR) PYQ 1548/7660 ~~   
+~~ :heavy_check_mark: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio27  -  Power 3,3v Sensor ON/OFF
+gpio27  -  Power 3,3v Sensor ON/OFF   [RELAY 4]
 
 ~~ :heavy_check_mark: LED ~~   
-gpio21  -  RED LED Inverted     	Relay1  
-gpio22  -  BLUE LED Inverted 	    Relay2  
-gpio4   -  GREEN LED Inverted	    Relay3  
+gpio21  -  RED LED Inverted     	[RELAY 1] 
+gpio22  -  BLUE LED Inverted 	   [RELAY 2]  
+gpio4   -  GREEN LED Inverted	   [RELAY 3]   
 
 ~~ :heavy_check_mark: PIEZO ~~   
 gpio16  -  Funktioniert als PWM Output
