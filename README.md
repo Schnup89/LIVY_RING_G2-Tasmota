@@ -70,8 +70,11 @@ gpio16  -  Funktion nicht bekannt, Piezo Knackt beim schalten von low auf high
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 gpio18  -  HeaterPIN CSS811 oder CSS801   
 
-~~ :heavy_division_sign: Chip: 1099 a40AG ~~   
-gpio13  -  Funktion unbekannt
+~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
+gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
+gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
+Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
+Chip: ???? 1099 a40AG  
 
 ~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
 gpio32  -  low power alarm  
