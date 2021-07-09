@@ -78,18 +78,31 @@ gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]
 Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
 Chip: ???? 1099 a40AG  
 
-~~ :heavy_division_sign: i2c LiPO Spannungsanzeige [LC709203F] ~~  
+~~ :heavy_division_sign: AirQuality ~~   
+i2c  -  Gruppe2  
+  
+~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
+i2c  -  Gruppe1  
 gpio32? -  low power alarm  
 Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
-~~ :heavy_check_mark: i2c RTC Clock (MCP7940M)  
-i2c-pins
+~~ :heavy_check_mark: RTC Clock (MCP7940M)  
+i2c  -  Gruppe1  
 
-~~ :heavy_check_mark: i2C ~~  
-gpio14 - SDA   
-gpio12 - SCL  
-  
+~~ :heavy_check_mark: i2c GRUPPE 1 ~~  
+gpio14  -  SDA    
+gpio12  -  SCL   
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x0b 0x6f"}  
 0x0b = LC709203F (LiPo-SPannungsanzeige)  
 0x6f = MCP7940M (RTC Clock)
+
+~~ :heavy_division_sign: i2c GRUPPE 2 ~~   
+gpio19  -  SDA  
+gpio18  -  SCL   
+Found Devices:  
+{"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
+0x40 = Unbekannt  
+0x48 = Unbekannt  
+0x60 = Unbekannt  
+
