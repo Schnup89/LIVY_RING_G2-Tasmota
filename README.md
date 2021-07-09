@@ -78,7 +78,7 @@ gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]
 Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
 Chip: ???? 1099 a40AG  
 
-~~ :heavy_division_sign: AirQuality ~~   
+~~ :heavy_division_sign: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe2  
   
 ~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
@@ -102,7 +102,7 @@ gpio19  -  SDA
 gpio18  -  SCL   
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
-0x40 = Unbekannt  
+0x40 = HDC1080 Temp&Feuchtigkeit
 0x48 = Unbekannt  
 0x60 = Unbekannt  
 
