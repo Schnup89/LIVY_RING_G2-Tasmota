@@ -102,7 +102,7 @@ gpio19  -  SDA
 gpio18  -  SCL   
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
-0x40 = HDC1080 Temp&Feuchtigkeit
+0x40 = HDC1080 Temp&Feuchtigkeit  
 0x48 = Unbekannt  
 0x60 = Unbekannt  
 
