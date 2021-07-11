@@ -79,17 +79,17 @@ Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf
 Chip: ???? 1099 a40AG  
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
-i2c  -  Gruppe2  
+i2c  -  Gruppe1  
   
 ~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
-i2c  -  Gruppe1  
+i2c  -  Gruppe2  
 gpio32? -  low power alarm  
 Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
 ~~ :heavy_check_mark: RTC Clock (MCP7940M)  
-i2c  -  Gruppe1  
+i2c  -  Gruppe2  
 
-~~ :heavy_check_mark: i2c GRUPPE 1 ~~  
+~~ :heavy_check_mark: i2c GRUPPE 2 ~~  
 gpio14  -  SDA    
 gpio12  -  SCL   
 Found Devices:  
@@ -97,7 +97,7 @@ Found Devices:
 0x0b = LC709203F (LiPo-SPannungsanzeige)  
 0x6f = MCP7940M (RTC Clock)
 
-~~ :heavy_division_sign: i2c GRUPPE 2 ~~   
+~~ :heavy_division_sign: i2c GRUPPE 1 ~~   
 gpio19  -  SDA  
 gpio18  -  SCL   
 Found Devices:  
