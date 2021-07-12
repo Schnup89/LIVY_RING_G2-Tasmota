@@ -58,7 +58,7 @@ gpio35  -  RESET
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
 gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**  
-Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
+ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push  
 
 ~~ :heavy_check_mark: LED ~~   
 gpio21  -  RED LED Inverted     	**[RELAY 1]**  
@@ -67,28 +67,33 @@ gpio4   -  GREEN LED Inverted	   **[RELAY 3]**
 
 ~~ :heavy_check_mark: PIEZO ~~   
 gpio16  -  Funktioniert als PWM Output  
+Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
 ~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
 gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
 gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
 Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
-Chip: ???? 1099 a40AG  
+Chip: ???? 1099 a40AG
+ToDo  -  Komplett neu prüfen, aktuell ist jede Diagnose eine Sackgasse...  
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 i2c  -  Gruppe2  ADS1115  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
+ToDo  -  ADS1115 Werte unverändert, auch bei setzen des Heater Pins, schwierig! -> Prüfen!  
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]** 
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
   
 ~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
 i2c  -  Gruppe2  
-gpio32? -  low power alarm  
-Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
+gpio? -  low power alarm  
+ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push, low power alarm gpio finden und testen
+ToDo  -  ESP32 i2c Bugfix in Core abwarten (https://github.com/espressif/arduino-esp32/issues/4729)  
 
 ~~ :heavy_check_mark: RTC Clock (MCP7940M)  
 i2c  -  Gruppe2  
+ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
 ~~ :heavy_check_mark: i2c GRUPPE 2 ~~  
 gpio14  -  SDA    
