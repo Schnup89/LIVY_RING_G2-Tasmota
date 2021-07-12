@@ -57,7 +57,7 @@ gpio35  -  RESET
 ~~ :heavy_check_mark: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**
+gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**  
 Tasmota -  Neue xsns Lib überarbeiten, evtl. GIT Push
 
 ~~ :heavy_check_mark: LED ~~   
