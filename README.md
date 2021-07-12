@@ -105,5 +105,5 @@ Found Devices:
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
 0x40 = HDC1080 Temp&Feuchtigkeit  
 0x48 = ADS1115 Analog zu DigitalWandler... Gas Sensor? Gpio33 An/Aus  
-0x60 = Unbekannt  
+0x60 = MCP4725 Heater Output für Gas Sensor?
 
