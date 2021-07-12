@@ -66,11 +66,7 @@ gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**
 gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
 
 ~~ :heavy_check_mark: PIEZO ~~   
-gpio16  -  Funktioniert als PWM Output
-
-~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
-gpio18  -  Heater PIN   
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
+gpio16  -  Funktioniert als PWM Output  
 
 ~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
 gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
@@ -78,8 +74,13 @@ gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]
 Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
 Chip: ???? 1099 a40AG  
 
+~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
+gpio18  -  Heater PIN   
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
+
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]** 
   
 ~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
 i2c  -  Gruppe2  
