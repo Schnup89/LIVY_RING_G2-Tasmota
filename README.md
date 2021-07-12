@@ -70,7 +70,7 @@ gpio16  -  Funktioniert als PWM Output
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 gpio18  -  Heater PIN   
-gpio33  -  Sensor PIN  
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
 
 ~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
 gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
@@ -103,6 +103,6 @@ gpio18  -  SCL
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
 0x40 = HDC1080 Temp&Feuchtigkeit  
-0x48 = Unbekannt  
+0x48 = ADS1115 Analog zu DigitalWandler... Gas Sensor? Gpio33 An/Aus  
 0x60 = Unbekannt  
 
