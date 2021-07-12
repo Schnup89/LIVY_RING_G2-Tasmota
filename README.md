@@ -75,7 +75,7 @@ Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf
 Chip: ???? 1099 a40AG  
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
-gpio18  -  Heater PIN   
+i2c  -  Gruppe2  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
