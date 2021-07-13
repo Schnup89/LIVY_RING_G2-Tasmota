@@ -69,12 +69,15 @@ gpio4   -  GREEN LED Inverted	   **[RELAY 3]**
 gpio16  -  Funktioniert als PWM Output   **[RELAY 6]**  
 Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
-~~ :heavy_division_sign: Mikrofon Chip: 1099 a40AG ~~   
-gpio13  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
-gpio15  -  Funktion unbekannt [kein Widerstand wohl ein Input]  
-Mikrofon: https://www.mouser.de/datasheet/2/218/pk0641ht4h-1-rev-a-1519664.pdf  
-Chip: ???? 1099 a40AG
-ToDo  -  Komplett neu prüfen, aktuell ist jede Diagnose eine Sackgasse...  
+~~ :heavy_division_sign: Mikrofon I2S PDM pk0641ht4h ~~   
+gpio17  -  Clock  
+gpio5  -  Data  
+ToDo  -  Implementierung I2S Code 
+  
+~~ :heavy_division_sign: DS1099 Oscillator ~~  
+gpio13  -  AE0, steuert out0   
+gpio15  -  AE1, steuert out1     
+ToDo  -  Was wird damit gesteuert?    
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 i2c  -  Gruppe2  ADS1115  
