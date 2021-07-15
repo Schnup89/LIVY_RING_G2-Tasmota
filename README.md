@@ -67,7 +67,7 @@ gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**
 gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
 
 ~~ :heavy_check_mark: PIEZO ~~   
-gpio16  -  Funktioniert als PWM Output   **[RELAY 7]**  
+gpio16  -  Funktioniert als PWM Output   **[RELAY 8]**  
 Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
 ~~ :heavy_check_mark: Mikrofon I2S PDM pk0641ht4h ~~   
