@@ -15,6 +15,7 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - Temperatur & Luftfeuchtigkeitssensor
 - Piezo per PWM ansteuerbar
 - Mikrofon-Lautstärkepegel auslesbar
+- Bewegungssensor
 
 
 ## Den Ring öffnen
