@@ -74,14 +74,14 @@ gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**
 gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
 
 ~~ :heavy_check_mark: PIEZO ~~   
-gpio16  -  Funktioniert als PWM Output   **[RELAY 8]**  
+gpio16  -  Funktioniert als PWM Output   **[RELAY 7]**  
 Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
 ~~ :heavy_check_mark: Mikrofon I2S PDM pk0641ht4h ~~   
 gpio17  -  Clock (I2S In SLCT)  
 gpio5  -  Data  (I2S In Data)  
 gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 6]**   
-gpio15  -  Clock over DS1099 IC (Muss 0 sein) **[RELAY 7]**   
+gpio15  -  Clock over DS1099 IC (Muss low sein)
 ToDo  -  Implementierung I2S Code      
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
