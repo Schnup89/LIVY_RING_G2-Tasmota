@@ -22,6 +22,8 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - Vier Kreuzschlitzschrauben entfernen (am besten die Löcher mit einem Schranubenzieher ertasten)
 - Ring entfernen
 
+## Update  
+Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist könnt ihr die Binary hier im Repo über das Webinterface -> Firmware Update hochladen.
 
 ## Flashen
 !!!! Batterien entfernen !!!!
@@ -38,7 +40,7 @@ livyringg2tasmo.bin und alle vier flash Files in den selben Ordner wie das Flash
 Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
 ~~ Flashen ~~
-- gpio0 mit GND verbinden
+- gpio0 mit GND verbinden (am einfachsten das Gehäuse des PushButton als GND nehmen)
 - ESP32 starten (USB Kabel verbinden)
 - Led bleibt dauerhaft "grün" <- Flashmodus aktiv
 - gpio0 Verbindung zu GND trennen
@@ -50,6 +52,10 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 ```
 - Wenn der Flasher erfolg vermeldet hat, den ESP neu starten und es sollte ein Tasmota WLAN für die weitere Einrichtung erscheinen.
 
+## Voreinstellungen Tasmota
+Wenn RELAY 5 aus ist, hängt das Webinterface. Dewegen ist Standardmäßig die Option [PowerOnState](https://tasmota.github.io/docs/PowerOnState/) auf 1 (Bei jedem Neustart Relays einschalten)  
+Dieses könnt ihr mit dem Befehl "PowerOnState 3" auf Standard setzen.  
+[SetOption114](https://tasmota.github.io/docs/Commands/#setoption114)  -  eingeschaltet um Switches von Relays zu trennen
 
 ## gpios and sensor
 
