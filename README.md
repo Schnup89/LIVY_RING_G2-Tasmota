@@ -79,9 +79,10 @@ gpio15  -  Clock over DS1099 IC (Muss 0 sein) **[RELAY 7]**
 ToDo  -  Implementierung I2S Code      
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
-i2c  -  Gruppe2  ADS1115  
+Sensor  -  TLA2024 (?ADS1115?)  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
-ToDo  -  ADS1115 Werte unverändert, auch bei setzen des Heater Pins, schwierig! -> Prüfen!  
+i2c  -  Heater über MCP4706  
+ToDo  -  TLA2024 AI1,AI2,AI3 prüfen  
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
@@ -111,6 +112,6 @@ gpio18  -  SCL
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
 0x40 = HDC1080 Temp&Feuchtigkeit  
-0x48 = ADS1115 Analog zu DigitalWandler... Gas Sensor? Gpio33 An/Aus  
-0x60 = MCP4725 Heater Output für Gas Sensor?
+0x48 = TLA2024 (?ADS1115?) Analog zu DigitalWandler  
+0x60 = MCP4706(A0T-E/MA) ->(INA) MCP602 (OUTA)-> Heater für Gas Sensor  
 
