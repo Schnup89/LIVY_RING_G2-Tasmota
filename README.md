@@ -14,6 +14,7 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - Der Reset-Knopf wird beim drücken erkannt
 - Temperatur & Luftfeuchtigkeitssensor
 - Piezo per PWM ansteuerbar
+- Mikrofon-Lautstärkepegel auslesbar
 
 
 ## Den Ring öffnen
