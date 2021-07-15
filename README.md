@@ -51,6 +51,8 @@ Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten,
 esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dout --flash_freq 40m --flash_size detect 0x1000 bootloader_dout_40m.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 livyringg2tasmo.bin
 ```
 - Wenn der Flasher erfolg vermeldet hat, den ESP neu starten und es sollte ein Tasmota WLAN für die weitere Einrichtung erscheinen.
+- Im Webinterface unter "Einstellungen" -> "Gerät" -> "Gerätetyp" LivyRing auswählen.
+
 
 ## Voreinstellungen Tasmota
 Wenn RELAY 5 aus ist, hängt das Webinterface. Dewegen ist Standardmäßig die Option [PowerOnState](https://tasmota.github.io/docs/PowerOnState/) auf 1 (Bei jedem Neustart Relays einschalten)  
