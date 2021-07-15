@@ -75,12 +75,7 @@ gpio17  -  Clock (I2S In SLCT)
 gpio5  -  Data  (I2S In Data)
 gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 6]** 
 gpio15  -  Clock over DS1099 IC (Muss 0 sein) **[RELAY 7]** 
-ToDo  -  Implementierung I2S Code 
-  
-~~ :heavy_division_sign: DS1099 Oscillator ~~  
-gpio13  -  AE0, steuert out0   
-gpio15  -  AE1, steuert out1     
-ToDo  -  Was wird damit gesteuert?    
+ToDo  -  Implementierung I2S Code    
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 i2c  -  Gruppe2  ADS1115  
