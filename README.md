@@ -18,11 +18,11 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - Mikrofon-Lautstärkepegel auslesbar
 - Bewegungssensor
 - Gas-Sensor
+- Auslesen des Spannungschips
 
 
 ## Was funktioniert nicht?
 - Energiesparfunktionen <- werden evtl. nachgereicht
-- Auslesen des Spannungschip <- Work in progress, evtl. ESP32-Bug
 - Gas-Sensor Anzeige in ppm <- Work in progress, da brauche ich Hilfe
 - RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt
 
