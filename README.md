@@ -108,11 +108,10 @@ ToDo  -  Rückgabewert in ppm umwandeln
 i2c  -  Gruppe1  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
   
-~~ :heavy_division_sign: LiPO Spannungsanzeige [LC709203F] ~~  
+~~ :heavy_check_mark: LiPO Spannungsanzeige [LC709203F] ~~  
 i2c  -  Gruppe2  
-gpio? -  low power alarm  
-ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push, low power alarm gpio finden und testen
-ToDo  -  ESP32 i2c Bugfix in Core abwarten (https://github.com/espressif/arduino-esp32/issues/4729)  
+gpio23 -  low power alarm  
+low power alarm gpio finden und testen 
 
 ~~ :x: RTC Clock (MCP7940M)  
 i2c  -  Gruppe2  
