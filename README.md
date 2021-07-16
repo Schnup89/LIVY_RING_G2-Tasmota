@@ -103,9 +103,9 @@ gpio? -  low power alarm
 ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push, low power alarm gpio finden und testen
 ToDo  -  ESP32 i2c Bugfix in Core abwarten (https://github.com/espressif/arduino-esp32/issues/4729)  
 
-~~ :heavy_check_mark: RTC Clock (MCP7940M)  
+~~ :x: RTC Clock (MCP7940M)  
 i2c  -  Gruppe2  
-ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push
+Komplizierte RTC, hier ist es der Aufwand nicht Wert, mit Tasmota haben wir NTP.  
 
 ~~ :heavy_check_mark: i2c GRUPPE 2 ~~  
 gpio14  -  SDA    
