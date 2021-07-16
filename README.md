@@ -9,13 +9,22 @@ PIN-Layout ESP32-WROOM-32X
 https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 
 
-# Was funktioniert aktuell?
+## Was funktioniert?
+- [Tasmota](https://github.com/arendst/Tasmota) und alle seinen Funktionen :)
 - LED Steurung (Rot,Grün,Blau) [Sichtbar am PIR Sensor] 
-- Der Reset-Knopf wird beim drücken erkannt
+- Der Reset-Knopf für beliebige Funktion
 - Temperatur & Luftfeuchtigkeitssensor
 - Piezo per PWM ansteuerbar
 - Mikrofon-Lautstärkepegel auslesbar
 - Bewegungssensor
+- Gas-Sensor
+
+
+## Was funktioniert nicht?
+- Energiesparfunktionen <- werden evtl. nachgereicht
+- Auslesen des Spannungschip <- Work in progress, evtl. ESP32-Bug
+- Gas-Sensor Anzeige in ppm <- Work in progress, da brauche ich Hilfe
+- RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt
 
 
 ## Den Ring öffnen
@@ -23,8 +32,10 @@ https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 - Vier Kreuzschlitzschrauben entfernen (am besten die Löcher mit einem Schranubenzieher ertasten)
 - Ring entfernen
 
+
 ## Update  
 Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist könnt ihr die Binary hier im Repo über das Webinterface -> Firmware Update hochladen.
+
 
 ## Flashen
 !!!! Batterien entfernen !!!!
@@ -60,6 +71,7 @@ Wenn RELAY 5 aus ist, hängt das Webinterface. Dewegen ist Standardmäßig die O
 Dieses könnt ihr mit dem Befehl "PowerOnState 3" auf Standard setzen.  
 [SetOption114](https://tasmota.github.io/docs/Commands/#setoption114)  -  eingeschaltet um Switches von Relays zu trennen
 
+
 ## gpios and sensor
 
 ~~ :heavy_check_mark: Buttons ~~  
@@ -84,14 +96,13 @@ Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch 
 gpio17  -  Clock (I2S In SLCT)  
 gpio5  -  Data  (I2S In Data)  
 gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 6]**   
-gpio15  -  Clock over DS1099 IC (Muss low sein)
-ToDo  -  Implementierung I2S Code      
+gpio15  -  Clock over DS1099 IC (Muss low sein)    
 
 ~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
 Sensor  -  TLA2024 (?ADS1115?)  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
 i2c  -  Heater über MCP4706  
-ToDo  -  TLA2024 AI1,AI2,AI3 prüfen  
+ToDo  -  Rückgabewert in ppm umwandeln 
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
