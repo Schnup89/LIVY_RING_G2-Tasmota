@@ -98,7 +98,7 @@ gpio5  -  Data  (I2S In Data)
 gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 6]**   
 gpio15  -  Clock over DS1099 IC (Muss low sein)    
 
-~~ :heavy_division_sign: GAS SENSOR CCS801 ~~  
+~~ :heavy_check_mark: GAS SENSOR CCS801 ~~  
 Sensor  -  TLA2024 (?ADS1115?)  
 gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
 i2c  -  Heater über MCP4706  
