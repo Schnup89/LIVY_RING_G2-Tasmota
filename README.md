@@ -125,7 +125,7 @@ Found Devices:
 0x0b = LC709203F (LiPo-SPannungsanzeige)  
 0x6f = MCP7940M (RTC Clock)
 
-~~ :heavy_division_sign: i2c GRUPPE 1 ~~   
+~~ :heavy_check_mark: i2c GRUPPE 1 ~~   
 gpio19  -  SDA  
 gpio18  -  SCL   
 Found Devices:  
