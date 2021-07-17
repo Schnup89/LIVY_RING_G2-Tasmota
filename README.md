@@ -8,6 +8,8 @@ Bitte entfernt für das Testen die drei LiPo Batterien!
 PIN-Layout ESP32-WROOM-32X
 https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
 
+Ich versuche die custom libarys aufzuräumen und per git Push in tasmota zu integrieren.
+Damit könnt ihr immer die neuste tasmota Version kompilieren.
 
 ## Was funktioniert?
 - [Tasmota](https://github.com/arendst/Tasmota) und alle seinen Funktionen :)
