@@ -82,33 +82,33 @@ gpio35  -  RESET
 ~~ :heavy_check_mark: Motion (PIR) PYQ 1548/7660 ~~   
 gpio32  -  serial IN       OUTPUT  
 gpio2   -  DirectLink      INPUT  
-gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 4]**  
+gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 1]**  
 ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push  
 
 ~~ :heavy_check_mark: LED ~~   
-gpio21  -  RED LED Inverted     	**[RELAY 1]**  
-gpio22  -  BLUE LED Inverted 	   **[RELAY 2]**  
-gpio4   -  GREEN LED Inverted	   **[RELAY 3]**   
+gpio21  -  RED LED Inverted     
+gpio22  -  BLUE LED Inverted 	 
+gpio4   -  GREEN LED Inverted	    
 
 ~~ :heavy_check_mark: PIEZO ~~   
-gpio16  -  Funktioniert als PWM Output   **[RELAY 7]**  
+gpio16  -  Funktioniert als PWM Output 
 Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
 ~~ :heavy_check_mark: Mikrofon I2S PDM pk0641ht4h ~~   
 gpio17  -  Clock (I2S In SLCT)  
 gpio5  -  Data  (I2S In Data)  
-gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 6]**   
+gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 3]**   
 gpio15  -  Clock over DS1099 IC (Muss low sein)    
 
 ~~ :heavy_check_mark: GAS SENSOR CCS801 ~~  
 Sensor  -  TLA2024 (?ADS1115?)  
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
 i2c  -  Heater über MCP4706  
 ToDo  -  Rückgabewert in ppm umwandeln 
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 5]**  
+gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
   
 ~~ :heavy_check_mark: LiPO Spannungsanzeige [LC709203F] ~~  
 i2c  -  Gruppe2  
