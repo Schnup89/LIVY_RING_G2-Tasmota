@@ -11,6 +11,6 @@ Zeile 712
 Für Decibel-Erkennung/Sound-Filter Mikrofon  
 
 **gpio.txt**  
-Datei in Verzeichnis: \lib\libesp32\Berry\default
-Zeile 237+ GPIO_PYQ_PIR_DL 236
-Zeile 238+ GPIO_PYQ_PIR_SER 237 
+Datei in Verzeichnis: \lib\libesp32\Berry\default  
+Zeile 237+ GPIO_PYQ_PIR_DL 236  
+Zeile 238+ GPIO_PYQ_PIR_SER 237   
