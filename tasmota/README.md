@@ -8,4 +8,9 @@ Zeile 711
 Zeile 712  
 
 **ArduinoFFT-Lib**  
-Für Decibel-Erkennung/Sound-Filter Mikrofon
+Für Decibel-Erkennung/Sound-Filter Mikrofon  
+
+**gpio.txt**  
+Datei in Verzeichnis: \lib\libesp32\Berry\default
+Zeile 237+ GPIO_PYQ_PIR_DL 236
+Zeile 238+ GPIO_PYQ_PIR_SER 237 
