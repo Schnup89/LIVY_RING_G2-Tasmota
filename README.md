@@ -95,9 +95,9 @@ gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 1]**
 ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push  
 
 ~~ :heavy_check_mark: LED ~~   **[RELAY 4]**  
-gpio21  -  RED LED Inverted     
-gpio22  -  BLUE LED Inverted 	 
-gpio4   -  GREEN LED Inverted	    
+gpio21  -  RED LED Inverted  
+gpio22  -  BLUE LED Inverted  
+gpio4   -  GREEN LED Inverted  
 
 ~~ :heavy_check_mark: PIEZO ~~   
 gpio16  -  Funktioniert als PWM Output 
