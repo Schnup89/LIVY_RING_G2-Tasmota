@@ -26,7 +26,8 @@ Damit könnt ihr immer die neuste tasmota Version kompilieren.
 ## Was funktioniert nicht?
 - Energiesparfunktionen <- werden evtl. nachgereicht
 - Gas-Sensor Anzeige in ppm <- Work in progress, da brauche ich Hilfe
-- RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt
+- Aus/Einschalten der AirQuality-Sensoren (bei der aktivierung werden diese nicht mehr im i2c bus erkannt)
+- *RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt*
 
 
 ## Den Ring öffnen
