@@ -1,9 +1,17 @@
 # Vorwort
-Sobald ihr den ESP flashed, gibt es kein zurück auf den Ursprungszustand, außer Ihr sichert euch evtl. den Flash (habe ich weder gemacht noch getestet).
-Ich übernehme keine Haftung für irgendwas ;)
-Bitte entfernt für das Testen die drei LiPo Batterien!
+ :warning: **Batteriebetrieb aktuell und in absehbarer Zeit nicht möglich**   
+   
+ :warning: **Es gibt keine Garantie das alle Sensoren in Tasmota implementiert werden können**  
+   
+Source-Code :clipboard:    https://github.com/Jason2866/LIVY_RING_G2-Tasmota  
 
-!! Es gibt keine Garantie dass alle Sensoren in Tasmota implementiert werden können !! 
+
+Sobald ihr den ESP flashed, gibt es kein zurück auf den Ursprungszustand, außer Ihr sichert euch evtl. den Flash (habe ich weder gemacht noch getestet).
+Ich übernehme keine Haftung für irgendwas ;)  
+  
+Bitte entfernt für die Tests die drei LiPo Batterien, achtet auf die korrekte Polung!
+
+
 
 PIN-Layout ESP32-WROOM-32X
 https://tasmota.github.io/docs/Pinouts/#esp32-wroom-32x
@@ -24,10 +32,10 @@ Damit könnt ihr immer die neuste tasmota Version kompilieren.
 
 
 ## Was funktioniert nicht?
-- Energiesparfunktionen <- werden evtl. nachgereicht
-- Gas-Sensor Anzeige in ppm <- Work in progress, da brauche ich Hilfe
-- Aus/Einschalten der AirQuality-Sensoren (bei der aktivierung werden diese nicht mehr im i2c bus erkannt)
-- *RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt*
+:construction_worker: Energiesparfunktionen <- werden evtl. nachgereicht  
+:construction_worker: Gas-Sensor Anzeige in ppm <- Work in progress, da brauche ich Hilfe  
+:construction_worker: Aus/Einschalten der AirQuality-Sensoren (bei der aktivierung werden diese nicht mehr im i2c bus erkannt)  
+:x: RTC, der Zeitgeber um Uhrzeit auch ohne WLAN zu aktualisieren <- Wird von mir nicht umgesetzt 
 
 
 ## Den Ring öffnen
@@ -37,7 +45,8 @@ Damit könnt ihr immer die neuste tasmota Version kompilieren.
 
 
 ## Update  
-Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist könnt ihr die Binary hier im Repo über das Webinterface -> Firmware Update hochladen.
+Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist könnt ihr die Binary hier im Repo über das Webinterface -> Firmware Update hochladen.  
+**Bei Problemen nach dem Update bitte "Konfiguration zurücksetzen"**  
 
 
 ## Flashen
@@ -51,10 +60,11 @@ Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist k
 - oder Flasher Windows (Müsst ihr probieren, hier die originale Anleitung: https://tasmota.github.io/docs/ESP32/#flashing)
 
 ~~ Vorbereitung ~~  
-livyringg2tasmo.bin und alle vier flash Files in den selben Ordner wie das Flash-Tool ablegen.
+
+livyringg2tasmo.bin und alle vier Flasfiles in den selben Ordner wie das Flash-Tool ablegen.
 Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
-~~ Flashen ~~
+~~ Flashen ~~  
 - gpio0 mit GND verbinden (am einfachsten das Gehäuse des PushButton als GND nehmen)
 - ESP32 starten (USB Kabel verbinden)
 - Led bleibt dauerhaft "grün" <- Flashmodus aktiv
