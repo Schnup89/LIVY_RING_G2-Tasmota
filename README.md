@@ -69,17 +69,22 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 - Im Webinterface unter "Einstellungen" -> "Gerät" -> "Gerätetyp" LivyRing auswählen und unten mit "speichern" bestätigen.
 
 
-## Voreinstellungen Tasmota
-Wenn RELAY 5 aus ist, hängt das Webinterface. Dewegen ist Standardmäßig die Option [PowerOnState](https://tasmota.github.io/docs/PowerOnState/) auf 1 (Bei jedem Neustart Relays einschalten)  
-Dieses könnt ihr mit dem Befehl "PowerOnState 3" auf Standard setzen.  
-[SetOption114](https://tasmota.github.io/docs/Commands/#setoption114)  -  eingeschaltet um Switches von Relays zu trennen
-
-Für die Button-Beschriftung im Webinterface bitte folgende Kommandos einzeln in der Konsole absetzen:
-- WEBBUTTON1 PIR
-- WEBBUTTON2 AIRQ
-- WEBBUTTON3 MIC
-- WEBBUTTON4 LED
-
+## Einstellungen Tasmota  
+~~  Voreingestellt ~~  
+[SetOption114](https://tasmota.github.io/docs/Commands/#setoption114)  -  eingeschaltet um Switches von Relays zu trennen    
+  
+ ~~ Konsolen-Kommandos  ~~  
+Um den Buzzer zu aktivieren:
+```
+setoption111 1
+```   
+Für die Beschriftung der Buttons in der UI  
+```
+WEBBUTTON1 PIR  
+WBBUTTON2 AIRQ  
+WEBBUTTON3 MIC  
+WEBBUTTON4 LED 
+``` 
 
 ![Screenshot](livyringtasmotized.png)
 
