@@ -91,7 +91,7 @@ setoption111 1
 Für die Beschriftung der Buttons in der UI  
 ```
 WEBBUTTON1 PIR  
-WEBUTTON2 AIRQ  
+WEBBUTTON2 AIRQ  
 WEBBUTTON3 MIC  
 WEBBUTTON4 LED 
 ``` 
