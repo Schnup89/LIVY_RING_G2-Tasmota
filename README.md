@@ -2,7 +2,9 @@
  :warning: **Batteriebetrieb aktuell und in absehbarer Zeit nicht möglich**   
    
  :warning: **Es gibt keine Garantie das alle Sensoren in Tasmota implementiert werden können**  
-   
+ 
+
+Deskstand STL :link: [Erstellt von Trashwarez, vielen Dank!](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/8)     
 Source-Code :clipboard:    https://github.com/Jason2866/LIVY_RING_G2-Tasmota  
 
 
