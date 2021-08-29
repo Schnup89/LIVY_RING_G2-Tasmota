@@ -1,5 +1,5 @@
 # Vorwort
- :warning: **Prüft bitte das PCB Layout [dieses](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/11) wird noch nicht unterstützt!**
+ :warning: **Prüft bitte das PCB Layout [dieses](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/11) wird noch nicht unterstützt! Nach aktuellem Stand werden nur die LivyRinge mit 19 am Anfang der Seriennummer unterstützt **
 
  :warning: **Batteriebetrieb aktuell und in absehbarer Zeit nicht möglich**   
    
