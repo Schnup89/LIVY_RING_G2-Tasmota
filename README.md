@@ -1,4 +1,6 @@
 # Vorwort
+ :warning: **Prüft bitte das PCB Layout [dieses](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/11) wird noch nicht unterstützt!**
+
  :warning: **Batteriebetrieb aktuell und in absehbarer Zeit nicht möglich**   
    
  :warning: **Es gibt keine Garantie das alle Sensoren in Tasmota implementiert werden können**  
