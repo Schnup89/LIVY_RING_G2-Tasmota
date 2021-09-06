@@ -108,7 +108,7 @@ Sensor90 blind, 2
 Sensor90 pulse, 1
 ```   
 
-Konfiguration persistent für Bewegungsmelder:  
+Konfiguration persistent für Bewegungsmelder:   _(Rule-Nummer nach Bedarf ändern)_
 ```
 Rule1 ON System#Boot DO Backlog Sensor90 sens, 30; Sensor90 blind_time, 2; Sensor90 pulse, 1 ENDON
 Rule1 1
@@ -117,6 +117,12 @@ Rule1 ON System#Boot DO Sensor90 sens, 30 ENDON
 Rule1 1
 ```   
 
+Konfiguration Spannungssensor Alarm-Pin-Schwellwert. Default 20%.  _(Rule-Nummer nach Bedarf ändern)_
+```
+Rule2 ON System#Boot DO Sensor89 perc, 15 ENDON
+Rule2 1
+```   
+0 = Alarm deaktiviert
 
 
 ![Screenshot](livyringtasmotized.png)
