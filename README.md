@@ -88,17 +88,36 @@ esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after
 [SetOption114](https://tasmota.github.io/docs/Commands/#setoption114)  -  eingeschaltet um Switches von Relays zu trennen    
   
  ~~ Konsolen-Kommandos  ~~  
-Um den Buzzer zu aktivieren:
+Um den Buzzer zu aktivieren:  
 ```
 setoption111 1
 ```   
-Für die Beschriftung der Buttons in der UI  
+
+Für die Beschriftung der Buttons in der UI:  
 ```
 WEBBUTTON1 PIR  
 WEBBUTTON2 AIRQ  
 WEBBUTTON3 MIC  
 WEBBUTTON4 LED 
 ``` 
+
+Konfiguration Bewegungsmelder:  
+```
+Sensor90 sens, 30
+Sensor90 blind, 2
+Sensor90 pulse, 1
+```   
+
+Konfiguration persistent für Bewegungsmelder:  
+```
+Rule1 ON System#Boot DO Backlog Sensor90 sens, 30; Sensor90 blind_time, 2; Sensor90 pulse, 1 ENDON
+Rule1 1
+oder für einen einzelnen Parameter:
+Rule1 ON System#Boot DO Sensor90 sens, 30 ENDON
+Rule1 1
+```   
+
+
 
 ![Screenshot](livyringtasmotized.png)
 
