@@ -117,12 +117,12 @@ Rule1 ON System#Boot DO Sensor90 sens, 30 ENDON
 Rule1 1
 ```   
 
-Konfiguration Spannungssensor Alarm-Pin-Schwellwert. Default 20%.  _(Rule-Nummer nach Bedarf ändern)_
+Konfiguration Spannungssensor Alarm-Pin-Schwellwert. Default 20%. 0 = Alarm deaktiviert  _(Rule-Nummer nach Bedarf ändern)_
 ```
 Rule2 ON System#Boot DO Sensor89 perc, 15 ENDON
 Rule2 1
 ```   
-0 = Alarm deaktiviert
+
 
 
 ![Screenshot](livyringtasmotized.png)
