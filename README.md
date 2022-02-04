@@ -1,7 +1,7 @@
 # Vorwort
- :warning: **Prüft bitte das PCB Layout [dieses](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/11) wird noch nicht komplett unterstützt! **
- :warning: **LivyRinge mit 19'er Seriennummer am Anfang werden Out-of-the-Box unterstützt**
- :warning: **LivyRinge mit 18'er Seriennummer fehlen noch 2-3 Module und die GPIO's müssen per Hand angepasst werden, siehe Issue 11**
+ :warning: **Prüft bitte das PCB Layout [dieses](https://github.com/Schnup89/LIVY_RING_G2-Tasmota/issues/11) wird noch nicht komplett unterstützt! **  
+ :warning: **LivyRinge mit 19'er Seriennummer am Anfang werden Out-of-the-Box unterstützt**  
+ :warning: **LivyRinge mit 18'er Seriennummer fehlen noch 2-3 Module und die GPIO's müssen per Hand angepasst werden, siehe Issue 11**  
  
  
 
