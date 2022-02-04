@@ -130,43 +130,45 @@ Rule2 1
 
 ## gpios and sensor
 
+(Erste Spalte = LivyRing mit SN 19xxx  -  zweite Splate = 18xxx)   
+  
 ~~ :heavy_check_mark: Buttons ~~  
-gpio35  -  RESET  
+gpio35  -  gpio14  -  RESET  
  
 ~~ :heavy_check_mark: Motion (PIR) PYQ 1548/7660 ~~   
-gpio32  -  serial IN       OUTPUT  
-gpio2   -  DirectLink      INPUT  
-gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 1]**  
+gpio32  -  gpio32  -  serial IN       OUTPUT  
+gpio2   -  gpio2  -  DirectLink      INPUT  
+gpio27  -  gpio25  -  Power 3,3v Sensor ON/OFF   **[RELAY 1]**  
 ToDo  -  Neue xsns Lib überarbeiten, evtl. GIT Push  
 
 ~~ :heavy_check_mark: LED ~~   **[RELAY 4]**  
-gpio21  -  RED LED Inverted  
-gpio22  -  BLUE LED Inverted  
-gpio4   -  GREEN LED Inverted  
+gpio21  -  gpio22  -  RED LED Inverted  
+gpio22  -  gpio23  -  BLUE LED Inverted  
+gpio4   -  gpio21  -  GREEN LED Inverted  
 
 ~~ :heavy_check_mark: PIEZO ~~   
-gpio16  -  Funktioniert als PWM Output 
+gpio16  -  gpio16  -  Funktioniert als PWM Output 
 Bemerkung  -  Wird immer als letztes Relay angezeigt/hinzugefügt... warum auch immer :)  
 
 ~~ :heavy_check_mark: Mikrofon I2S PDM pk0641ht4h ~~   
-gpio17  -  Clock (I2S In SLCT)  
-gpio5  -  Data  (I2S In Data)  
-gpio13  -  Power 3,3v Microphone ON/OFF   **[RELAY 3]**   
-gpio15  -  Clock over DS1099 IC (Muss low sein)    
+gpio17  -  gpio17  -  Clock (I2S In SLCT)  
+gpio5  -  gpio5  -  Data  (I2S In Data)  
+gpio13  -  gpio26  -  Power 3,3v Microphone ON/OFF   **[RELAY 3]**   
+gpio15  -  unknown  -  Clock over DS1099 IC (Muss low sein)    
 
 ~~ :heavy_check_mark: GAS SENSOR CCS801 ~~  
 Sensor  -  TLA2024 (?ADS1115?)  
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
+gpio33  -  unknown  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
 i2c  -  Heater über MCP4706  
 ToDo  -  Rückgabewert in ppm umwandeln 
 
 ~~ :heavy_check_mark: HDC1080 Temperatur und Luftfeuchtigkeit ~~   
 i2c  -  Gruppe1  
-gpio33  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
+gpio33  - gpio27  -  Power 3,3v Sensor ON/OFF   **[RELAY 2]**  
   
 ~~ :heavy_check_mark: LiPO Spannungsanzeige [LC709203F] ~~  
 i2c  -  Gruppe2  
-gpio23 -  low power alarm  
+gpio23  -  unknown  -  low power alarm  
 low power alarm gpio finden und testen 
 
 ~~ :x: RTC Clock (MCP7940M)  
@@ -174,16 +176,16 @@ i2c  -  Gruppe2
 Komplizierte RTC, hier ist es der Aufwand nicht Wert, mit Tasmota haben wir NTP.  
 
 ~~ :heavy_check_mark: i2c GRUPPE 2 ~~  
-gpio14  -  SDA    
-gpio12  -  SCL   
+gpio14  -  unknown  -  SDA    
+gpio12  -  unknown  -  SCL   
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x0b 0x6f"}  
 0x0b = LC709203F (LiPo-SPannungsanzeige)  
 0x6f = MCP7940M (RTC Clock)
 
 ~~ :heavy_check_mark: i2c GRUPPE 1 ~~   
-gpio19  -  SDA  
-gpio18  -  SCL   
+gpio19  -  gpio18  -  SDA  
+gpio18  -  gpio19  -  SCL   
 Found Devices:  
 {"I2CScan":"Device(s) found at 0x40 0x48 0x60"}  
 0x40 = HDC1080 Temp&Feuchtigkeit  
