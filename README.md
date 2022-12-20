@@ -65,7 +65,7 @@ Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist k
 ~~ Was ihr braucht ~~
 - Einen USB TTL Adapter oder ein anderes Gerät mit TTL USB RX TX Schnittstelle
 - Tasmota Binary livyringg2tasmo.bin aus diesem Repository
-- Tasmota "Flash-Files" https://github.com/arendst/Tasmota-firmware/tree/main/static/esp32
+- Tasmota "Flash-Files" Die Flash-Files werden nicht mehr benötigt, siehe https://tasmota.github.io/docs/ESP32/#flashing
 - Flasher Linux https://github.com/espressif/esptool 
 - oder Flasher Windows (Müsst ihr probieren, hier die originale Anleitung: https://tasmota.github.io/docs/ESP32/#flashing)
 
