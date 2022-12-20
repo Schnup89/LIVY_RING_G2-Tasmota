@@ -65,9 +65,8 @@ Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist k
 ~~ Was ihr braucht ~~
 - Einen USB TTL Adapter oder ein anderes Gerät mit TTL USB RX TX Schnittstelle
 - Tasmota Binary livyringg2tasmo.bin aus diesem Repository
-- Tasmota "Flash-Files" Die Flash-Files werden nicht mehr benötigt, siehe https://tasmota.github.io/docs/ESP32/#flashing
-- Flasher Linux https://github.com/espressif/esptool 
-- oder Flasher Windows (Müsst ihr probieren, hier die originale Anleitung: https://tasmota.github.io/docs/ESP32/#flashing)
+- Tasmota "Flasher", siehe https://tasmota.github.io/docs/ESP32/#flashing
+- Mit diesem Flasher wurde es erfolgreich getestet: [ESP-Flasher.exe](https://github.com/Jason2866/ESP_Flasher/releases)
 
 ~~ Vorbereitung ~~  
 
@@ -81,10 +80,7 @@ Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten,
 - gpio0 Verbindung zu GND trennen
 - gpio1 mit dem TTL-Modul RX verbinden
 - gpio3 mit dem TTL-Modul TX verbinden
-- Kommando ausführen: 
-```
-esptool.py --chip esp32 --port COM4 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dout --flash_freq 40m --flash_size detect 0x1000 bootloader_dout_40m.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 livyringg2tasmo.bin
-```
+- In dem Flasher-Tool "ESP-Flasher" die Binary aus diesem Repository auswählen und den Flash-Vorgang starten. 
 - Wenn der Flasher erfolg vermeldet hat, den ESP neu starten und es sollte ein Tasmota WLAN für die weitere Einrichtung erscheinen.
 - Im Webinterface unter "Einstellungen" -> "Gerät" -> "Gerätetyp" LivyRing auswählen und unten mit "speichern" bestätigen.
 
