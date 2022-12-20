@@ -65,12 +65,12 @@ Wenn ihr einmal geflashed habt und das Webinterface von Tasmota erreichbar ist k
 ~~ Was ihr braucht ~~
 - Einen USB TTL Adapter oder ein anderes Gerät mit TTL USB RX TX Schnittstelle
 - Tasmota Binary livyringg2tasmo.bin aus diesem Repository
-- Tasmota "Flasher", siehe https://tasmota.github.io/docs/ESP32/#flashing
+- Tasmota "Flasher-Tool", siehe https://tasmota.github.io/docs/ESP32/#flashing
 - Mit diesem Flasher wurde es erfolgreich getestet: [ESP-Flasher.exe](https://github.com/Jason2866/ESP_Flasher/releases)
 
 ~~ Vorbereitung ~~  
 
-livyringg2tasmo.bin und alle vier Flasfiles in den selben Ordner wie das Flash-Tool ablegen.
+livyringg2tasmo.bin, das Flash-Tool ESP_Flasher.exe und das TTL-Modul bereithalten.
 Ich habe für das Flashen die Kabel direkt an die Pins des ESP-Chip rangehalten, mit etwas Geduld hat es dann funktioniert ;)
 
 ~~ Flashen ~~  
